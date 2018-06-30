@@ -2,6 +2,7 @@
 #include <vector>
 #include <fstream>
 #include <string>
+#include <iterator>
 
 using namespace std;
 
@@ -38,7 +39,10 @@ int main() {
 	vector<process> processes;//need to make an array of structs or vector to store these processes
 
 	process p; 
-	
+
+	/*NOTE: This is how we can add adress space to the vector for it to be summed. These 2 lines of code 44-45 is just for visualization and will be deleted later*/
+	p.addressSpace.push_back(1);
+	p.addressSpace.push_back(20);
 
 	cout << "Memory size = ";
 	cin >> memSize;
