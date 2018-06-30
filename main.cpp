@@ -30,7 +30,8 @@ int main() {
 	int memSize, pageSize;
 	string fileName;
 	
-	process p; //need to make an array of structs or vector to store these processes
+	vector<process> processes;//need to make an array of structs or vector to store these processes
+	process p; 
 	
 
 	cout << "Memory size = ";
