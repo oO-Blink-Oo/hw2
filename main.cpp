@@ -3,6 +3,8 @@
 #include <fstream>
 #include <string>
 
+using namespace std;
+
 /*
 THINGS TO DO:
 *
@@ -19,10 +21,10 @@ struct process{
 	int lifeTime_;
 	int numAddressSpace_;
 	
-	vector<int> addressSpace; //holds address spaces
+	vector <int> addressSpace; //holds address spaces
 };
 
-using namespace std;
+
 
 
 int main() {
