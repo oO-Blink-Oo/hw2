@@ -22,6 +22,7 @@ struct process{
 	int numAddressSpace_;
 	
 	vector <int> addressSpace; //holds address spaces
+	//need a function that sums this address spaces
 };
 
 
@@ -32,7 +33,10 @@ int main() {
 	int memSize, pageSize;
 	string fileName;
 	
+	
+
 	vector<process> processes;//need to make an array of structs or vector to store these processes
+
 	process p; 
 	
 
@@ -40,7 +44,10 @@ int main() {
 	cin >> memSize;
 	cout << "\nPage Size (1: 100, 2: 200, 3: 300 = ";
 	cin >> pageSize;
+	
 	cout << "\nInput file name = ";
 	cin >> fileName;
+	ifstream inFile(fileName);
+	
 	return 0;
 }
