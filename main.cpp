@@ -20,7 +20,7 @@ struct process{
 	int pid_;
 	int arrivalTime_;
 	int lifeTime_;
-	int numAddressSpace_;
+	int numAddressSpace_;//how many pieces of address space are inside the vector to be added together
 	
 	vector <int> addressSpace; //holds address spaces
 	//need a function that sums this address spaces
